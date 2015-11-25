@@ -197,7 +197,7 @@ module.exports = function() {
 			controller.sites
 		);
 
-		page( '/domains/add/:domain',
+		page( '/domains/add/:suggestion?/:domain',
 			adTracking.retarget,
 			controller.siteSelection,
 			controller.navigation,
