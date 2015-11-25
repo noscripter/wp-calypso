@@ -16,6 +16,10 @@ describe( 'Site Utils', function() {
 			assert.isFunction( SiteUtils.canUpdateFiles );
 		} );
 
+		it( 'canUpdateFiles should return false when no site object is passed in', function() {
+			assert.isFalse( SiteUtils.canUpdateFiles() );
+		} );
+
 		it( 'canUpdateFiles should return false when passed an empty object', function() {
 			assert.isFalse( SiteUtils.canUpdateFiles( {} ) );
 		} );
